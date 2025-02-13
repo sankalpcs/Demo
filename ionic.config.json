@@ -1,0 +1,11 @@
+{
+  "name": "Demo",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "117c91b6"
+}
