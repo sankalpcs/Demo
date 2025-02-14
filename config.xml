@@ -20,6 +20,7 @@
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyCX1ILM3Mk8cQN9MTi-EhajjwLN2svKj4o" />
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyCX1ILM3Mk8cQN9MTi-EhajjwLN2svKj4o" />
+    <engine name="ios" spec="^6.2.0" />
     <platform name="android">
         <preference name="Scheme" value="http" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
@@ -47,6 +48,7 @@
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
+    <hook src="scripts/after_prepare.js" type="after_prepare" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
@@ -100,4 +102,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^5.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-googlemaps" spec="^2.7.1" />
 </widget>
