@@ -26,6 +26,7 @@
     "@capacitor/haptics": "7.0.0",
     "@capacitor/keyboard": "7.0.0",
     "@capacitor/status-bar": "7.0.0",
+    "@ionic-native/google-maps": "^5.5.0",
     "@ionic/angular": "^8.0.0",
     "@ionic/cordova-builders": "^12.1.2",
     "ionicons": "^7.0.0",
@@ -50,6 +51,7 @@
     "@typescript-eslint/parser": "^8.18.0",
     "cordova-android": "^13.0.0",
     "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-googlemaps": "^2.7.1",
     "cordova-plugin-ionic": "^5.5.3",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^5.0.0",
@@ -83,6 +85,9 @@
         "UPDATE_METHOD": "background",
         "MAX_STORE": "2",
         "MIN_BACKGROUND_DURATION": "30"
+      },
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_IOS": "AIzaSyCWo89K6VNQ0OUkZOovX5YHoTdZBBLm_Qg"
       }
     },
     "platforms": [
