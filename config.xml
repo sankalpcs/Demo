@@ -48,8 +48,7 @@
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
-        <hook src="scripts/auto_pod_install.js" type="before_build" />
-        <hook src="scripts/after_prepare.js" type="after_prepare" />
+        <hook type="before_build" src="scripts/after_prepare.js" />
         <preference name="UseLegacyBuildSystem" value="true" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
