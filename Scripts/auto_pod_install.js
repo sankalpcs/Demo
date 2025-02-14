@@ -8,9 +8,6 @@ module.exports = function(context) {
     const iosPlatformPath = path.join(context.opts.projectRoot, 'platforms', 'ios');
 
     if (fs.existsSync(iosPlatformPath)) {
-        console.log('Generating Podfile...');
-        exec('cordova platform add ios --nosave', { stdio: 'inherit' });
-
         console.log('Running pod install...');
         exec('pod install', { cwd: iosPlatformPath, stdio: 'inherit' });
     } else {
